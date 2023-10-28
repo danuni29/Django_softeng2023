@@ -8,15 +8,15 @@
 
 <body>
     <nav>
-        <a href="/blog/">Blog</a>
+        <a href="/blog/">목록으로 가기</a>
     </nav>
     <h1>Blog</h1>
 
 
 
-    <h1>{{ post.title }}</h1>
-    <h4>{{ post.created_at }}</h4>
-    <p>{{ post.content }}</p>
+    <h1>{{ posts.title }}</h1>
+    <p>{{ posts.content }}</p>
+    <h4>글 쓴 시간: {{ posts.created_at }}</h4>
     <hr/>
 </body>
 

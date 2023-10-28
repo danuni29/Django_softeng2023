@@ -3,7 +3,7 @@ from .models import Post
 # Create your views here.
 
 def index(request):
-    posts = Post.objects.all().order_by('-pk')
+    posts = Post.objects.all().order_by('-updated_at')
     return render(
         request,
         'blog/index.html',
@@ -12,7 +12,7 @@ def index(request):
     }
     )
 
-def single_post_page(request,pk):
+def single_post_page(request, pk):
     posts = Post.objects.get(pk=pk)
     return render(
         request,
