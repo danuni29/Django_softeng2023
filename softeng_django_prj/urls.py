@@ -22,7 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('single_pages.urls')),
 
-    path('blog/', include('blog.urls'))
+    path('blog/', include('blog.urls')),
+    path("todo/", include("todo_app.urls")),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

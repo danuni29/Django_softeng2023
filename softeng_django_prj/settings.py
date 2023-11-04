@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "blog",
     "single_pages",
+    "todo_app",
 ]
 
 MIDDLEWARE = [
@@ -101,6 +102,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# SECURITY WARNING: keep the secret key used in production secret
+
+SECRET_KEY = (
+    "django-insecure-!r4sgi-w($+vmxpe12rg%bvyf$7kz$co3tzw6klpu#f)yfmy#3"
+)
+
+# SECURITY WARNING: don't run with debug turned on in production
+
+DEBUG = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
